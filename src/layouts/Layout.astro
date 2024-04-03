@@ -28,18 +28,9 @@ const { title } = Astro.props;
     <meta name="al:android:app_name" content="Dagsan portfolio" />
     <meta name="al:ios:app_name" content="Dagsan portfolio" />
     <title>{title}</title>
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <slot />
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      import AOS from "aos";
-
-      AOS.init();
-    </script>
   </body>
 </html>
 <style is:global>
@@ -78,9 +69,8 @@ const { title } = Astro.props;
   h3,
   h4,
   h5,
-  h6, 
-  p{
+  h6,
+  p {
     text-wrap: balance;
   }
-
 </style>

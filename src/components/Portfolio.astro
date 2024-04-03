@@ -4,17 +4,17 @@ import ProjectCard from "./ProjectCard.astro";
 
 <section id="portfolio">
   <div class="flex justify-center mt-10">
-    <h2 class="text-4xl md:text-5xl text-txt-primary font-extrabold p-10" data-aos="zoom-in-up" data-aos-duration="1000">
+    <h2 class="text-4xl md:text-5xl text-txt-primary font-extrabold p-10">
       Portfolio
     </h2>
   </div>
 
-  <div class="flex justify-center text-txt-secondary text-lg mb-3" data-aos="zoom-in-up" data-aos-duration="1000">
+  <div class="flex justify-center text-txt-secondary text-lg mb-3">
     <h4 class="uppercase">Selected projects</h4>
   </div>
 
-  <div class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-txt-secondary " data-aos="zoom-in-up" data-aos-duration="1000">
-    <ProjectCard client:load
+  <div class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-txt-secondary ">
+    <ProjectCard
       title="Persistence Validator with Microservices" 
       body="Java Spring Hibernate MySQL Docker Circuit Breaker Load Balancer Api Gateway" 
       hrefA="https://github.com/dagsandev/aws-sicos-java-docker-bootcamp/tree/main/final-project/backend" 

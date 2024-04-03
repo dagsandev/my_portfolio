@@ -1,0 +1,115 @@
+<main
+  class="flex flex-col items-center justify-center text-dark-primary"
+  id="text"
+>
+  <div class="w-[250px] flex justify-center py-5 aspect-square">
+    <img
+      src="../../src/assets/img/me.webp"
+      alt="dagsan profile photo"
+      class="profile-photo rounded-full"
+      loading="lazy"
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+    />
+  </div>
+
+  <div
+    class="flex flex-col justify-center items-center"
+  >
+    <h1 class="text-6xl text-txt-secondary uppercase">Daglio Santiago</h1>
+    <h2 class="text-4xl text-txt-primary py-5 uppercase">Software Developer</h2>
+  </div>
+
+  <div
+    class="sm:flex sm:flex-wrap sm:space-x-4 justify-center text-center w-full max-w-2xl text-txt-primary font-bold p-6"
+  >
+    <div class="w-full sm:w-48">
+      <a href="#portfolio" role="button" class="button block w-full sm:max-w-80"
+        >Portfolio</a
+      >
+    </div>
+    <div class="w-full sm:w-48">
+      <a href="/contact" role="button" class="button block w-full sm:max-w-80"
+        >Contact me</a
+      >
+    </div>
+  </div>
+
+  <div>
+    <a href="#about">
+      <img
+        src="../../src/assets/img/chevron-down-solid.svg"
+        class="chevron-down"
+        alt="chevron down icon"
+      />
+    </a>
+  </div>
+</main>
+
+<style>
+  .profile-photo:hover {
+    box-shadow: 0 0 10px grey;
+  }
+
+  .button {
+    border: 1px solid #21e3ef;
+    border-radius: 50px;
+    padding: 10px 0px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .button:hover {
+    background-color: #21e3ef;
+    color: #031720;
+  }
+  .button:active {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+
+  .chevron-down {
+    animation: bounce 1.5s infinite;
+    animation-delay: 2s;
+    width: 30px;
+    height: 30px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    #text {
+      flex-direction: column;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.8rem;
+      line-height: 2.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    img {
+      width: 220px;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+</style>

@@ -1,0 +1,84 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  hrefA: string;
+  hrefImg: string;
+  alt: string;
+}
+
+const { title, body, hrefA, hrefImg, alt } = Astro.props;
+---
+
+<div class="card">
+  <div class="image-container">
+    <img src={hrefImg} alt={alt} loading="lazy" />
+  </div>
+
+  <div class="text-container">
+    <h3>{title}</h3>
+    <p>{body}</p>
+  </div>
+
+  <div class="m-10">
+    <a href={hrefA} role="button" class="btn" target="_blank">View project</a>
+  </div>
+</div>
+
+<style>
+  .card {
+    width: 330px;
+    height: 430px;
+    background-color: rgba(71, 142, 201, 0.1);
+    border: 1px solid rgba(71, 142, 201, 0.15);
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(18, 134, 230, 0.25);
+    overflow: hidden;
+    text-align: center;
+  }
+  .card:hover {
+    animation: cardHover 0.3s ease-in-out forwards;
+  }
+
+  h3 {
+    color: #21e3ef;
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: larger;
+  }
+  h3,
+  p {
+    text-wrap: balance;
+  }
+
+  .image-container {
+    margin-bottom: 10px;
+    aspect-ratio: 16 / 9;
+  }
+  img {
+    width: 330px;
+    height: 220px;
+  }
+
+  .btn {
+    border: 1px solid rgba(18, 134, 230, 0.25);
+    border-radius: 20px;
+    padding: 8px 10px;
+  }
+  .btn:hover {
+    background-color: rgba(71, 142, 201, 0.1);
+  }
+  .btn:active {
+    background-color: rgba(71, 142, 201, 0.733);
+  }
+
+  @keyframes cardHover {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+</style>

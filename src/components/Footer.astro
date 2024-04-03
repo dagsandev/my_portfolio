@@ -1,0 +1,36 @@
+---
+const today = new Date();
+---
+
+<footer class="grid grid-cols-3 justify-center items-center p-5 mt-32">
+  <div class="text-[12px] uppercase text-txt-primary">
+    <p>&copy; {today.getFullYear()} Daglio Santiago</p>
+    <p>have a nice day! <span class="text-[14px]"> &#x1F601</span></p>
+  </div>
+
+  <div class="flex items-center justify-center">
+    <img
+      width="25px"
+      height="25px"
+      src="../../src/assets/img/argentina-icon.webp"
+      alt="Argentina icon flag"
+    />
+  </div>
+
+  <div class="flex justify-end">
+    <a href="#">
+      <img
+      width="25px"
+      height="25px"
+        src="../../src/assets/img/circle-chevron-up-solid.svg"
+        alt="chevron up"
+      />
+    </a>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: #252121;
+  }
+</style>

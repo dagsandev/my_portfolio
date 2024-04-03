@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout title="Not Found - Dagsan.dev">
+  <Navbar />
+  <main>
+    <img src="../../src/assets/img/404.webp" alt="404 not found image" />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin-inline: 7dvw;
+    min-height: 80vh;
+    max-width: 1800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 450px;
+  }
+</style>

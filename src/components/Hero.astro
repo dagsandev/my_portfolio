@@ -1,10 +1,14 @@
+---
+import me from '../../src/assets/img/me.webp';
+---
+
 <main
   class="flex flex-col items-center justify-center text-dark-primary"
   id="text"
 >
   <div class="w-[250px] flex justify-center py-5 aspect-square">
     <img
-      src="../../src/assets/img/me.webp"
+      src={me.src}
       alt="dagsan profile photo"
       class="profile-photo rounded-full"
       loading="lazy"

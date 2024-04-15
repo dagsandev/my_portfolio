@@ -20,13 +20,16 @@ const { title, body, hrefA, hrefImg, alt } = Astro.props;
     <p>{body}</p>
   </div>
 
-  <div class="m-10">
+  <div class="flex flex-1 justify-center mb-4 items-end">
     <a href={hrefA} role="button" class="btn" target="_blank">View project</a>
   </div>
 </div>
 
 <style>
   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 330px;
     height: 430px;
     background-color: rgba(71, 142, 201, 0.1);
